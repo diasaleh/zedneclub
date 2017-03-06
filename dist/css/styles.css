@@ -1,0 +1,100 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa');
+@import url('https://fonts.googleapis.com/css?family=Scheherazade');
+@import url('https://fonts.googleapis.com/css?family=Changa');
+@import url('https://fonts.googleapis.com/css?family=Mirza');
+@import url('https://fonts.googleapis.com/css?family=Harmattan');
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.main{
+    height: 100vh;
+}
+.intro{
+    float: left;
+    height: 100%;
+    width: 62%;
+    background-color: #2F2E2E;
+    padding:   0 100px 0 100px;
+}
+.intro h1{
+    margin-top: 110px;
+    text-align: center;
+    font-size: 500%;
+    font-family: 'Droid Arabic Kufi', serif;
+    color: white;
+}
+.intro p{
+    margin-top: 70px;
+    color: white;
+    font-size: 180%;
+    text-align: justify;
+    text-align-last: center;
+font-family: 'Scheherazade', sans-serif;
+
+}
+.logo{
+    display: inline-block;
+    height: 100vh;
+    width: 38%;
+    background: url("../../images/logo1.png");
+    background-position: 50% 50%;
+  background-size: cover;
+
+
+}
+
+.social-links {
+	list-style: none;
+	float: right;
+    font-size: 180%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 100%; 
+    padding: 0;
+    padding-top: 30px;
+}
+
+.social-links li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.social-links li a:link,
+.social-links li a:visited
+{
+	text-decoration: none;
+	border: 0;
+	color: #888;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+	font-size: 160%;
+}
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-youtube,
+.ion-social-instagram{
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;	
+}
+.ion-social-facebook:hover {
+	color: #3b5998;
+}
+.ion-social-twitter:hover {
+	color: #00aced;
+}
+.ion-social-youtube:hover {
+	color: #e52d27;
+}
+.ion-social-instagram:hover {
+	color: #f77737;
+}
