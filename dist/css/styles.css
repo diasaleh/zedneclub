@@ -1,9 +1,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
-@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa');
 @import url('https://fonts.googleapis.com/css?family=Scheherazade');
-@import url('https://fonts.googleapis.com/css?family=Changa');
-@import url('https://fonts.googleapis.com/css?family=Mirza');
-@import url('https://fonts.googleapis.com/css?family=Harmattan');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
 
 html,
@@ -12,9 +9,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .main{
     height: 100vh;
     width: 100%;
+    text-align: center;
 }
 .intro{
     float: left;
@@ -30,6 +29,14 @@ body {
     font-size: 400%;
     font-family: 'Droid Arabic Kufi', serif;
     color: white;
+    transition: color .5s;
+    padding: 0;
+    display: inline-block;
+
+}
+.intro h1:hover{
+    color: #b51725;
+    cursor: pointer;
 }
 .intro p{
     color: white;
@@ -37,20 +44,50 @@ body {
     text-align: justify;
     text-align-last: center;
     font-family: 'Scheherazade', sans-serif;
-    padding:   0 100px 0 100px;
-
+    padding: 0 100px 0 100px;
+    cursor: pointer;
+    
 }
+
+
 .logo{
     display: inline-block;
     height: 100vh;
     width: 38%;
-    background: url("../../images/logo1.png");
+    background: black url("../../images/logo1.png");
     background-position: 50% 50%;
     background-size: cover;
-
-
+}
+.logo:hover{
+    
+}
+.section2{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: #006d65;
+    color: white;
+    font-family: 'Scheherazade', sans-serif;
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
 }
 
+.section2 h2{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 0px;
+    font-size: 250%;
+}
+.section2 .hrr{
+    margin: 0;
+    padding: 0;
+    width: 25%; 
+    height: 2px;
+    display: inline-block;
+    background-color: white;
+    
+}
 .social-links {
 	list-style: none;
 	float: right;
@@ -100,4 +137,31 @@ body {
 }
 .ion-social-instagram:hover {
 	color: #f77737;
+}
+footer{
+    padding: 0 50 0 50;
+    width: 100%;
+    height: 151px;
+    background-color: #b51725;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    font-family: 'Comfortaa', cursive;
+}
+footer:hover{
+        background-color: hsla(355, 77%, 40%, 0.9);
+
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+
+}
+footer h1{
+    margin: 0;
+    padding: 0;
+    font-size: 300%;
+    margin-bottom: 30px;
 }
