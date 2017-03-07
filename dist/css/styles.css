@@ -70,13 +70,11 @@ body {
     font-family: 'Scheherazade', sans-serif;
     padding: 0;
     margin: 0;
-    padding-top: 5px;
 }
 
 .section2 h2{
     padding: 0;
     margin: 0;
-    padding-bottom: 0px;
     font-size: 250%;
 }
 .section2 .hrr{
@@ -87,6 +85,11 @@ body {
     display: inline-block;
     background-color: white;
     
+}
+.section-header{
+    padding: 0;
+    margin: 0;
+    padding-top: 33px;
 }
 .social-links {
 	list-style: none;
@@ -136,7 +139,7 @@ body {
 	color: #e52d27;
 }
 .ion-social-instagram:hover {
-	color: #f77737;
+	color: #c13584;
 }
 footer{
     padding: 0 50 0 50;
