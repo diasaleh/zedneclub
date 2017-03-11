@@ -61,8 +61,8 @@ body {
 .logo:hover{
     
 }
-.section2{
-    height: 100vh;
+.section{
+    height: 650px;;
     width: 100%;
     text-align: center;
     background-color: #006d65;
@@ -72,12 +72,12 @@ body {
     margin: 0;
 }
 
-.section2 h2{
+.section h2{
     padding: 0;
     margin: 0;
     font-size: 250%;
 }
-.section2 .hrr{
+.section .hrr{
     margin: 0;
     padding: 0;
     width: 25%; 
@@ -89,7 +89,7 @@ body {
 .section-header{
     padding: 0;
     margin: 0;
-    padding-top: 15px;
+    padding-top: 35px;
 }
 .section-header h2{
     margin-bottom: -10px;
@@ -98,6 +98,8 @@ body {
     height: 80%;
     width: 100%;
     text-align: center;
+    margin-top: 20px;
+
 }
 .section-content button{
     width: 170px;
@@ -107,9 +109,10 @@ body {
     border: 3px solid white;
     color: white;
     font-size: 120%;
+    cursor: pointer;
+    margin-top: 40px;
 }
 .section-content button:hover{
-    margin-top: 10px;
     background-color: white;
     border: 3px solid #b51725;
     color: #b51725;
@@ -117,10 +120,10 @@ body {
     transition: background-color .7s;
 }
 .img-div{
-    width: 40%;
-    height: 40%;
+    width: 350px;
+    height: 350px;
     background-color: #2F2E2E;
-    margin: 15px 25px;
+    margin: 4px 4px;
     display: inline-block;
     
 }
@@ -135,9 +138,39 @@ body {
 .img-div h3{
     padding: 0;
     margin: 0;
-    text-align: right;
-    padding-right: 8px;
+    text-align: center;
+    font-size: 200%;
+    
 }
+.section3{
+    background-color: #F7F7F7;
+
+}
+
+.section3 .section-header h2
+{
+    color: #b51725;
+}
+.section3 .section-header .hrr
+{
+    background-color: #b51725;
+}
+.section3 .section-content button{
+    background-color: #F7F7F7;
+    border: 3px solid #b51725;
+    color: #b51725;
+}
+.section3 .section-content button:hover{
+    background-color: #b51725;
+    color: #F7F7F7;
+    transition: background-color .7s;
+}
+
+.section3 .img-div img{
+    height: 100%;
+}
+
+
 .social-links {
 	list-style: none;
 	float: right;
