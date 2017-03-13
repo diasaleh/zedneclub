@@ -12,26 +12,28 @@ body {
 
 .main{
     height: 100vh;
+    min-height: 700px;
     width: 100%;
     text-align: center;
 }
 .intro{
     float: left;
-    height: 100vh;
+    height: 100%;
     width: 62%;
     background-color: #2F2E2E;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .intro h1{
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     text-align: center;
-    font-size: 400%;
+    font-size: 70px;
     font-family: 'Droid Arabic Kufi', serif;
     color: white;
     transition: color .5s;
     padding: 0;
-    display: inline-block;
 
 }
 .intro h1:hover{
@@ -52,17 +54,32 @@ body {
 
 .logo{
     display: inline-block;
-    height: 100vh;
+    height: 100%;
     width: 38%;
-    background: black url("../../images/logo1.png");
-    background-position: 50% 50%;
-    background-size: cover;
+    position: relative;
+    background-color: #f6f6f6;
+
 }
-.logo:hover{
+.logo img{
+    max-height: 100%;  
+    max-width: 100%; 
+    width: 75%;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    transition: all .5s ease-in-out;
+
+}
+.logo img:hover{
+    transform: scale(1.1);
     
 }
 .section{
-    height: 650px;;
+    height: 680px;;
     width: 100%;
     text-align: center;
     background-color: #006d65;
@@ -75,7 +92,9 @@ body {
 .section h2{
     padding: 0;
     margin: 0;
-    font-size: 250%;
+    font-size: 200%;
+    font-family: 'Droid Arabic Kufi', serif;
+
 }
 .section .hrr{
     margin: 0;
@@ -92,13 +111,13 @@ body {
     padding-top: 35px;
 }
 .section-header h2{
-    margin-bottom: -10px;
+    margin-bottom: -5px;
 }
 .section-content{
     height: 80%;
     width: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 
 }
 .section-content button{
@@ -133,7 +152,8 @@ body {
     padding: 0;
     margin: 0;
     overflow: hidden;
-
+    max-height: 30px;
+    max-width: 30px;
 }
 .img-div h3{
     padding: 0;
@@ -172,15 +192,8 @@ body {
 
 
 .social-links {
-	list-style: none;
-	float: right;
-    font-size: 180%;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    width: 100%; 
     padding: 0;
-    padding-top: 10px;
+    font-size: 180%;
 }
 
 .social-links li {
@@ -247,4 +260,259 @@ footer h1{
     padding: 0;
     font-size: 300%;
     margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 300px) {
+    .main{
+        height: 100vh;
+        min-height: 400px;
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+    .logo img{
+        max-height: 100%;
+        height: 100%;
+        width: auto;
+        
+    }
+    
+    .intro{
+        width: 100%;
+        height: 100%;
+    }
+    .intro h1{
+        margin: 0;        
+        font-size: 20px;
+    }
+    .intro p{
+        font-size: 10px;
+        padding: 0 10px 0 10px;
+    }
+    .social-links{
+        font-size: 10px;
+        padding: 0;
+    }
+    
+}
+
+@media only screen and (min-width: 300px) {
+    .main{
+        height: 100vh;
+        min-height: 610px;
+        width: 100%;
+    }
+    .logo{
+        width: 100%;
+        height: 20%;
+        overflow: hidden;
+    }
+    .logo img{
+        max-height: 100%;
+        height: 100%;
+        width: auto;
+        
+    }
+    .logo img:hover{
+        transform: none;
+    }
+    .intro{
+        width: 100%;
+        height: 80%;
+    }
+    .intro h1{
+        margin: 0;
+        font-size: 40px;
+    }
+    .intro p{
+        font-size: 20px;
+        padding: 0 10px 0 10px;
+    }
+    .social-links{
+        font-size: 20px;
+        padding: 0;
+    }
+    
+}
+
+@media only screen and (min-width: 500px) {
+    .main{
+        height: 100vh;
+        min-height: 600px;
+        width: 100%;
+    }
+    .logo{
+        width: 100%;
+        height: 20%;
+        overflow: hidden;
+    }
+    .logo img{
+        max-height: 100%;
+        height: 100%;
+        width: auto;
+        
+    }
+    .intro{
+        width: 100%;
+        height: 80%;
+    }
+    .intro h1{
+        margin: 0;
+        font-size: 40px;
+    }
+    .intro p{
+        font-size: 20px;
+        padding: 0 10px 0 10px;
+    }
+    .social-links{
+        font-size: 20px;
+        padding: 0;
+    }
+  
+}
+@media only screen and (min-width: 768px) {
+.main{
+    height: 100vh;
+    min-height: 600px;
+    width: 100%;
+    text-align: center;
+}
+.intro{
+    float: left;
+    height: 100%;
+    width: 62%;
+    background-color: #2F2E2E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Droid Arabic Kufi', serif;
+    color: white;
+    transition: color .5s;
+    padding: 0;
+
+}
+.intro h1:hover{
+    color: #b51725;
+    cursor: pointer;
+}
+.intro p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    text-align-last: center;
+    font-family: 'Scheherazade', sans-serif;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+    
+}
+
+
+.logo{
+    display: inline-block;
+    height: 100%;
+    width: 38%;
+    position: relative;
+    background-color: #f6f6f6;
+
+}
+.logo img{
+    max-height: 100%;  
+    max-width: 100%; 
+    width: 75%;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    transition: all .5s ease-in-out;
+
+}
+.logo img:hover{
+    transform: scale(1.1);
+    
+}
+}
+@media only screen and (min-width: 1000px) {
+.main{
+    height: 100vh;
+    min-height: 600px;
+    width: 100%;
+    text-align: center;
+}
+.intro{
+    float: left;
+    height: 100%;
+    width: 62%;
+    background-color: #2F2E2E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Droid Arabic Kufi', serif;
+    color: white;
+    transition: color .5s;
+    padding: 0;
+
+}
+.intro h1:hover{
+    color: #b51725;
+    cursor: pointer;
+}
+.intro p{
+    color: white;
+    font-size: 23px;
+    text-align: justify;
+    text-align-last: center;
+    font-family: 'Scheherazade', sans-serif;
+    padding: 0 60px 0 60px;
+    cursor: pointer;
+    
+}
+
+
+.logo{
+    display: inline-block;
+    height: 100%;
+    width: 38%;
+    position: relative;
+    background-color: #f6f6f6;
+
+}
+.logo img{
+    max-height: 100%;  
+    max-width: 100%; 
+    width: 75%;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    transition: all .5s ease-in-out;
+
+}
+.logo img:hover{
+    transform: scale(1.1);
+    
+}
+     .social-links{
+        font-size: 25px;
+        padding: 0;
+        cursor: pointer;
+    }
 }
