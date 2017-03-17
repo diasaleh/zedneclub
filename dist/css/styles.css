@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
 
+
 html,
 body {
     height: 100%;
@@ -79,7 +80,6 @@ body {
     
 }
 .section{
-    height: 680px;;
     width: 100%;
     text-align: center;
     background-color: #006d65;
@@ -114,7 +114,6 @@ body {
     margin-bottom: -5px;
 }
 .section-content{
-    height: 80%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -261,176 +260,6 @@ footer h1{
     margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 300px) {
-    .main{
-        height: 100vh;
-        min-height: 400px;
-        width: 100%;
-    }
-    .logo{
-        display: none;
-    }
-    
-    .intro{
-        width: 100%;
-        height: 100%;
-    }
-    .intro h1{
-        margin: 0;        
-        font-size: 20px;
-    }
-    .intro p{
-        font-size: 10px;
-        padding: 0 10px 0 10px;
-    }
-    .social-links{
-        font-size: 10px;
-        padding: 0;
-    }
-    .section{
-        min-height: 700px;
-        width: 100%;
-        text-align: center;
-        background-color: #006d65;
-        color: white;
-        font-family: 'Scheherazade', sans-serif;
-        padding: 0;
-        margin: 0;
-        
-    }
-
-    .section h2{
-        padding: 0;
-        margin: 0;
-        font-size: 10px;
-        font-family: 'Droid Arabic Kufi', serif;
-
-    }
-    .section .hrr{
-        margin: 0;
-        padding: 0;
-        width: 25%; 
-        height: 2px;
-        display: inline-block;
-        background-color: white;
-
-    }
-    .section-header{
-        padding: 0;
-        margin: 0;
-        padding-top: 45px;
-        padding-bottom: -10px;
-    }
-    .section-header h2{
-        margin-bottom: -5px;
-    }
-    .section-content{
-        height: 80%;
-        width: 100%;
-        text-align: center;
-        margin-top: 40px;
-
-    }
-    .section-content button{
-        width: 100px;
-        height: 30px;
-        margin-top: 10px;
-        background-color: #006d65;
-        border: 3px solid white;
-        color: white;
-        font-size: 10px;
-        cursor: pointer;
-        margin-top: 30px;
-    }
-    .section-content button:hover{
-        background-color: white;
-        border: 3px solid #006d65;
-        color: #006d65;
-        font-size: 10px;
-        transition: background-color .7s;
-    }
-    .img-div{
-        width: 150px;
-        height: 150px;
-        background-color: #2F2E2E;
-        margin: 6px 6px;
-        display: inline-block;
-
-    }
-    .img-div img{
-        width: 100%;
-        height: 85%;
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-        
-    }
-    .img-div h3{
-        padding: 0;
-        margin: -10px;
-        text-align: center;
-        font-size: 10px;
-
-    }
-    .section3{
-        background-color: #F7F7F7;
-
-    }
-
-    .section3 .section-header h2
-    {
-        color: #b51725;
-    }
-    .section3 .section-header .hrr
-    {
-        background-color: #b51725;
-    }
-    .section3 .section-content button{
-        background-color: #F7F7F7;
-        border: 3px solid #b51725;
-        color: #b51725;
-    }
-    .section3 .section-content button:hover{
-        background-color: #b51725;
-        color: #F7F7F7;
-        transition: background-color .7s;
-    }
-
-    .section3 .img-div img{
-        height: 100%;
-    }
-    footer{
-        padding: 0 50 0 50;
-        width: 100%;
-        height: 151px;
-        background-color: #b51725;
-        color: white;
-        text-align: center;
-        padding-top: 80px;
-        font-family: 'Comfortaa', cursive;
-    }
-    footer:hover{
-            background-color: hsla(355, 77%, 40%, 0.9);
-
-    }
-    footer a{
-        text-decoration: none;
-        color: white;
-        display: inline-block;
-        cursor: pointer;
-
-    }
-    footer h1{
-        margin: 0;
-        padding: 0;
-        font-size: 10px;
-        margin-bottom: 30px;
-    }
-    footer p{
-        font-size: 9px;
-    }
-}
-
 @media only screen and (min-width: 300px) {
     .main{
         height: 100vh;
@@ -467,7 +296,7 @@ footer h1{
         font-size: 17px;
         padding: 0;
     }
-        .section{
+    .section{
         min-height: 1100px;;
         width: 100%;
         text-align: center;
@@ -504,11 +333,9 @@ footer h1{
         margin-bottom: -5px;
     }
     .section-content{
-        height: 80%;
         width: 100%;
         text-align: center;
         margin-top: 30px;
-
     }
     .section-content button{
         width: 120px;
@@ -608,32 +435,8 @@ footer h1{
 
 @media only screen and (min-width: 350px) {
     
-    
-    .main{
-        height: 100vh;
-        min-height: 550px;
-        width: 100%;
-    }
-    .logo{
-        width: 100%;
-        height: 20%;
-        overflow: hidden;
-    }
-    .logo img{
-        max-height: 100%;
-        height: 100%;
-        width: auto;
-        
-    }
-    .logo img:hover{
-        transform: none;
-    }
-    .intro{
-        width: 100%;
-        height: 80%;
-    }
+
     .intro h1{
-        margin: 0;
         font-size: 35px;
     }
     .intro p{
@@ -642,67 +445,26 @@ footer h1{
     }
     .social-links{
         font-size: 20px;
-        
-        padding: 0;
     }
     .section{
-        min-height: 1150px;;
-        width: 100%;
-        text-align: center;
-        background-color: #006d65;
-        color: white;
-        font-family: 'Scheherazade', sans-serif;
-        padding: 0;
-        margin: 0;
-        
+        min-height: 1150px;;        
     }
 
     .section h2{
-        padding: 0;
-        margin: 0;
         font-size: 20px;
         font-family: 'Droid Arabic Kufi', serif;
 
     }
-    .section .hrr{
-        margin: 0;
-        padding: 0;
-        width: 25%; 
-        height: 2px;
-        display: inline-block;
-        background-color: white;
-
-    }
-    .section-header{
-        padding: 0;
-        margin: 0;
-        padding-top: 15px;
-        padding-bottom: -10px;
-    }
-    .section-header h2{
-        margin-bottom: -5px;
-    }
-    .section-content{
-        height: 80%;
-        width: 100%;
-        text-align: center;
-        margin-top: 30px;
-
-    }
+ 
     .section-content button{
         width: 150px;
         height: 40px;
-        margin-top: 10px;
         background-color: #006d65;
-        border: 3px solid white;
-        color: white;
         font-size: 14px;
-        cursor: pointer;
-        margin-top: 30px;
     }
     .section-content button:hover{
         background-color: white;
-        border: 3px solid #006d65;
+        border: 3px solid white;
         color: #006d65;
         font-size: 14px;
         transition: background-color .7s;
@@ -734,15 +496,6 @@ footer h1{
         background-color: #F7F7F7;
 
     }
-
-    .section3 .section-header h2
-    {
-        color: #b51725;
-    }
-    .section3 .section-header .hrr
-    {
-        background-color: #b51725;
-    }
     .section3 .section-content button{
         background-color: #F7F7F7;
         border: 3px solid #b51725;
@@ -752,180 +505,134 @@ footer h1{
         background-color: #b51725;
         color: #F7F7F7;
         transition: background-color .7s;
-    }
-
-    .section3 .img-div img{
-        height: 100%;
+        font-size: 14px;
     }
 
 }
 
 @media only screen and (min-width: 500px) {
-    .main{
-        height: 100vh;
-        min-height: 600px;
-        width: 100%;
-    }
-    .logo{
-        width: 100%;
-        height: 20%;
-        overflow: hidden;
-    }
-    .logo img{
-        max-height: 100%;
-        height: 100%;
-        width: auto;
-        
-    }
-    .intro{
-        width: 100%;
-        height: 80%;
-    }
     .intro h1{
-        margin: 0;
         font-size: 40px;
     }
     .intro p{
         font-size: 20px;
-        padding: 0 10px 0 10px;
     }
     .social-links{
         font-size: 20px;
         padding: 0;
     }
-  
-}
-@media only screen and (min-width: 768px) {
-.main{
-    height: 100vh;
-    min-height: 600px;
-    width: 100%;
-    text-align: center;
-}
-.intro{
-    float: left;
-    height: 100%;
-    width: 62%;
-    background-color: #2F2E2E;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.intro h1{
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Droid Arabic Kufi', serif;
-    color: white;
-    transition: color .5s;
-    padding: 0;
-
-}
-.intro h1:hover{
-    color: #b51725;
-    cursor: pointer;
-}
-.intro p{
-    color: white;
-    font-size: 20px;
-    text-align: justify;
-    text-align-last: center;
-    font-family: 'Scheherazade', sans-serif;
-    padding: 0 20px 0 20px;
-    cursor: pointer;
-    
-}
-
-
-.logo{
-    display: inline-block;
-    height: 100%;
-    width: 38%;
-    position: relative;
-    background-color: #f6f6f6;
-
-}
-.logo img{
-    max-height: 100%;  
-    max-width: 100%; 
-    width: 75%;
-    height: auto;
-    position: absolute;  
-    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0;  
-    margin: auto;
-    transition: all .5s ease-in-out;
-
-}
-.logo img:hover{
-    transform: scale(1.1);
-    
-}
     .section{
-        min-height: 900px;
+        min-height: 1450px;;        
+    }
+    .img-div{
+        width: 400px;
+        height: 400px;
+        background-color: #2F2E2E;
+        margin: 6px 6px;
+        display: inline-block;
+
+    }
+    .img-div img{
         width: 100%;
-        text-align: center;
-        background-color: #006d65;
-        color: white;
-        font-family: 'Scheherazade', sans-serif;
+        height: 90%;
         padding: 0;
         margin: 0;
+        overflow: hidden;
         
+    }
+}
+@media only screen and (min-width: 768px) {
+    .main{
+        height: 100vh;
+        min-height: 600px;
+        width: 100%;
+        text-align: center;
+    }
+    .intro{
+        float: left;
+        height: 100%;
+        width: 62%;
+        background-color: #2F2E2E;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .intro h1{
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 45px;
+        font-family: 'Droid Arabic Kufi', serif;
+        color: white;
+        transition: color .5s;
+        padding: 0;
+
+    }
+    .intro h1:hover{
+        color: #b51725;
+        cursor: pointer;
+    }
+    .intro p{
+        font-size: 25px;
+        text-align: justify;
+        text-align-last: center;
+        padding: 0 20px 0 20px;
+        cursor: pointer;
+
+    }
+    .logo{
+        display: inline-block;
+        height: 100%;
+        width: 38%;
+        position: relative;
+        background-color: #f6f6f6;
+        cursor: pointer;
+    }
+    .logo img{
+        max-height: 100%;  
+        max-width: 100%; 
+        width: 75%;
+        height: auto;
+        position: absolute;  
+        top: 0;  
+        bottom: 0;  
+        left: 0;  
+        right: 0;  
+        margin: auto;
+        transition: all .5s ease-in-out;
+
+    }
+    .logo img:hover{
+        transform: scale(1.1);
+
+    }
+    .section{
+        min-height: 900px;  
     }
 
     .section h2{
-        padding: 0;
-        margin: 0;
         font-size: 25px;
-        font-family: 'Droid Arabic Kufi', serif;
-
-    }
-    .section .hrr{
-        margin: 0;
-        padding: 0;
-        width: 25%; 
-        height: 2px;
-        display: inline-block;
-        background-color: white;
-
-    }
-    .section-header{
-        padding: 0;
-        margin: 0;
-        padding-top: 15px;
-        padding-bottom: -10px;
     }
     .section-header h2{
         margin-bottom: -5px;
     }
-    .section-content{
-        height: 80%;
-        width: 100%;
-        text-align: center;
-        margin-top: 30px;
-
-    }
     .section-content button{
         width: 170px;
         height: 50px;
-        margin-top: 10px;
-        background-color: #006d65;
-        border: 3px solid white;
-        color: white;
-        font-size: 16px;
-        cursor: pointer;
-        margin-top: 30px;
+        font-size: 20px;
     }
     .section-content button:hover{
-        background-color: white;
-        border: 3px solid #006d65;
-        color: #006d65;
-        font-size: 16px;
-        transition: background-color .7s;
+        width: 170px;
+        height: 50px;
+        font-size: 20px;
     }
+    .section3 .section-content button:hover{
+        background-color: #b51725;
+        color: #F7F7F7;
+        transition: background-color .7s;
+        font-size: 20px;
+    }
+
     .img-div{
         width: 320px;
         height: 320px;
@@ -935,73 +642,20 @@ footer h1{
 
     }
     .img-div img{
-        width: 100%;
         height: 85%;
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-        
     }
     .img-div h3{
-        padding: 0;
         margin: -10px;
         text-align: center;
         font-size: 25px;
-
-    }
-    .section3{
-        background-color: #F7F7F7;
-
     }
 
-    .section3 .section-header h2
-    {
-        color: #b51725;
-    }
-    .section3 .section-header .hrr
-    {
-        background-color: #b51725;
-    }
-    .section3 .section-content button{
-        background-color: #F7F7F7;
-        border: 3px solid #b51725;
-        color: #b51725;
-    }
-    .section3 .section-content button:hover{
-        background-color: #b51725;
-        color: #F7F7F7;
-        transition: background-color .7s;
-    }
-
-    .section3 .img-div img{
-        height: 100%;
-    }
-        footer{
-        padding: 0 50 0 50;
-        width: 100%;
-        height: 151px;
-        background-color: #b51725;
-        color: white;
-        text-align: center;
-        padding-top: 80px;
-        font-family: 'Comfortaa', cursive;
-    }
     footer:hover{
             background-color: hsla(355, 77%, 40%, 0.9);
 
     }
-    footer a{
-        text-decoration: none;
-        color: white;
-        display: inline-block;
-        cursor: pointer;
-
-    }
     footer h1{
-        margin: 0;
-        padding: 0;
         font-size: 40px;
-        margin-bottom: 30px;
     }
     footer p{
         font-size: 16px;
@@ -1009,217 +663,37 @@ footer h1{
 
 }
 @media only screen and (min-width: 1000px) {
-.main{
-    height: 100vh;
-    min-height: 600px;
-    width: 100%;
-    text-align: center;
-}
-.intro{
-    float: left;
-    height: 100%;
-    width: 62%;
-    background-color: #2F2E2E;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.intro h1{
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center;
-    font-size: 65px;
-    font-family: 'Droid Arabic Kufi', serif;
-    color: white;
-    transition: color .5s;
-    padding: 0;
-
-}
-.intro h1:hover{
-    color: #b51725;
-    cursor: pointer;
-}
-.intro p{
-    color: white;
-    font-size: 24px;
-    text-align: justify;
-    text-align-last: center;
-    font-family: 'Scheherazade', sans-serif;
-    padding: 0 60px 0 60px;
-    cursor: pointer;
-    
-}
-
-
-.logo{
-    display: inline-block;
-    height: 100%;
-    width: 38%;
-    position: relative;
-    background-color: #f6f6f6;
-
-}
-.logo img{
-    max-height: 100%;  
-    max-width: 100%; 
-    width: 75%;
-    height: auto;
-    position: absolute;  
-    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0;  
-    margin: auto;
-    transition: all .5s ease-in-out;
-
-}
-.logo img:hover{
-    transform: scale(1.1);
-    
-}
+    .intro h1{
+        font-size: 65px;
+    }
+    .intro p{
+        color: white;
+        font-size: 24px;
+        
+    }
      .social-links{
         font-size: 29px;
-        padding: 0;
         cursor: pointer;
     }
     .section{
         min-height: 600px;
-        width: 100%;
-        text-align: center;
-        background-color: #006d65;
-        color: white;
-        font-family: 'Scheherazade', sans-serif;
-        padding: 0;
-        margin: 0;
-        
     }
 
     .section h2{
-        padding: 0;
-        margin: 0;
-        font-size: 25px;
-        font-family: 'Droid Arabic Kufi', serif;
-
+        font-size: 27px;
     }
     .section .hrr{
-        margin: 0;
-        padding: 0;
-        width: 25%; 
-        height: 2px;
-        display: inline-block;
-        background-color: white;
-
+        width: 17%; 
     }
     .section-header{
-        padding: 0;
-        margin: 0;
         padding-top: 45px;
         padding-bottom: -10px;
     }
-    .section-header h2{
-        margin-bottom: -5px;
-    }
-    .section-content{
-        height: 80%;
-        width: 100%;
-        text-align: center;
-        margin-top: 40px;
-
-    }
     .section-content button{
-        width: 170px;
-        height: 50px;
-        margin-top: 10px;
-        background-color: #006d65;
-        border: 3px solid white;
-        color: white;
         font-size: 20px;
-        cursor: pointer;
-        margin-top: 30px;
-    }
-    .section-content button:hover{
-        background-color: white;
-        border: 3px solid #006d65;
-        color: #006d65;
-        font-size: 20px;
-        transition: background-color .7s;
-    }
-    .img-div{
-        width: 320px;
-        height: 320px;
-        background-color: #2F2E2E;
-        margin: 6px 6px;
-        display: inline-block;
-
-    }
-    .img-div img{
-        width: 100%;
-        height: 85%;
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-        
-    }
-    .img-div h3{
-        padding: 0;
-        margin: -10px;
-        text-align: center;
-        font-size: 25px;
-
-    }
-    .section3{
-        background-color: #F7F7F7;
-
-    }
-
-    .section3 .section-header h2
-    {
-        color: #b51725;
-    }
-    .section3 .section-header .hrr
-    {
-        background-color: #b51725;
-    }
-    .section3 .section-content button{
-        background-color: #F7F7F7;
-        border: 3px solid #b51725;
-        color: #b51725;
-    }
-    .section3 .section-content button:hover{
-        background-color: #b51725;
-        color: #F7F7F7;
-        transition: background-color .7s;
-    }
-
-    .section3 .img-div img{
-        height: 100%;
-    }
-        footer{
-        padding: 0 50 0 50;
-        width: 100%;
-        height: 151px;
-        background-color: #b51725;
-        color: white;
-        text-align: center;
-        padding-top: 80px;
-        font-family: 'Comfortaa', cursive;
-    }
-    footer:hover{
-            background-color: hsla(355, 77%, 40%, 0.9);
-
-    }
-    footer a{
-        text-decoration: none;
-        color: white;
-        display: inline-block;
-        cursor: pointer;
-
     }
     footer h1{
-        margin: 0;
-        padding: 0;
         font-size: 40px;
-        margin-bottom: 30px;
     }
     footer p{
         font-size: 16px;
