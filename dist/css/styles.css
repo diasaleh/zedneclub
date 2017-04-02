@@ -13,48 +13,42 @@ body {
 
 .main{
     height: 100vh;
-    min-height: 700px;
+    min-height: 500px;
     width: 100%;
     text-align: center;
 }
 .intro{
     float: left;
     height: 100%;
-    width: 62%;
+    width: 100%;
     background-color: #2F2E2E;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .intro h1{
-    margin-top: 30px;
+    margin-top: 17px;
     margin-bottom: 10px;
     text-align: center;
-    font-size: 70px;
+    font-size: 20px;
     font-family: 'Droid Arabic Kufi', serif;
     color: white;
-    transition: color .5s;
     padding: 0;
 
 }
-.intro h1:hover{
-    color: #b51725;
-    cursor: pointer;
-}
 .intro p{
     color: white;
-    font-size: 160%;
+    font-size: 13px;
     text-align: justify;
     text-align-last: center;
     font-family: 'Scheherazade', sans-serif;
-    padding: 0 100px 0 100px;
-    cursor: pointer;
-    
+    padding: 0 10px 0 10px;
+    cursor: pointer; 
 }
 
 
 .logo{
-    display: inline-block;
+    display: none;
     height: 100%;
     width: 38%;
     position: relative;
@@ -81,6 +75,7 @@ body {
 }
 .section{
     width: 100%;
+    min-height: 860px;
     text-align: center;
     background-color: #006d65;
     color: white;
@@ -92,7 +87,7 @@ body {
 .section h2{
     padding: 0;
     margin: 0;
-    font-size: 200%;
+    font-size: 15px;
     font-family: 'Droid Arabic Kufi', serif;
 
 }
@@ -120,13 +115,13 @@ body {
 
 }
 .section-content button{
-    width: 170px;
-    height: 50px;
+    width: 100px;
+    height: 30px;
     margin-top: 10px;
     background-color: #b51725;
     border: 3px solid white;
     color: white;
-    font-size: 120%;
+    font-size: 15px;
     cursor: pointer;
     margin-top: 40px;
 }
@@ -134,30 +129,27 @@ body {
     background-color: white;
     border: 3px solid #b51725;
     color: #b51725;
-    font-size: 120%;
+    font-size: 15px;
     transition: background-color .7s;
 }
 .img-div{
-    width: 350px;
-    height: 350px;
+    width: 90%;
+    height: auto;
     background-color: #2F2E2E;
     margin: 4px 4px;
     display: inline-block;
     
 }
 .img-div img{
+    object-fit: cover;
     width: 100%;
-    height: 80%;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-  
+    height: 100%;
 }
 .img-div h3{
     padding: 0;
     margin: 0;
     text-align: center;
-    font-size: 200%;
+    font-size: 15px;
     
 }
 .section3{
@@ -191,12 +183,12 @@ body {
 
 .social-links {
     padding: 0;
-    font-size: 180%;
+    font-size: 13px;
 }
 
 .social-links li {
 	display: inline-block;
-	margin-right: 20px;
+	margin-right: 15px;
 }
 
 .social-links li a:link,
@@ -211,7 +203,7 @@ body {
 
 .social-links li a:link,
 .social-links li a:visited {
-	font-size: 160%;
+	font-size: 15px;
 }
 .ion-social-facebook,
 .ion-social-twitter,
@@ -241,6 +233,7 @@ footer{
     text-align: center;
     padding-top: 80px;
     font-family: 'Comfortaa', cursive;
+    font-size: 10px;
 }
 footer:hover{
         background-color: hsla(355, 77%, 40%, 0.9);
@@ -256,9 +249,15 @@ footer a{
 footer h1{
     margin: 0;
     padding: 0;
-    font-size: 300%;
+    font-size: 17px;
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+    word-break: break-all;
+    white-space: normal;
     margin-bottom: 30px;
 }
+
 
 @media only screen and (min-width: 300px) {
     .main{
@@ -270,6 +269,7 @@ footer h1{
         width: 100%;
         height: 20%;
         overflow: hidden;
+        display: inline-block;
     }
     .logo img{
         max-height: 100%;
@@ -400,6 +400,16 @@ footer h1{
     .section3 .img-div img{
         height: 100%;
     }
+
+    .social-links li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .social-links li a:link,
+    .social-links li a:visited {
+        font-size: 25px;
+    }
     footer{
         padding: 0 50 0 50;
         width: 100%;
@@ -414,6 +424,7 @@ footer h1{
             background-color: hsla(355, 77%, 40%, 0.9);
 
     }
+    
     footer a{
         text-decoration: none;
         color: white;
@@ -434,17 +445,28 @@ footer h1{
 }
 
 @media only screen and (min-width: 350px) {
-    
+    .main{
+        height: 100vh;
+        min-height: 500px;
+        width: 100%;
+        text-align: center;
+    }
 
     .intro h1{
-        font-size: 35px;
+        font-size: 25px;
     }
     .intro p{
         font-size: 17px;
         padding: 0 10px 0 10px;
     }
-    .social-links{
-        font-size: 20px;
+    .social-links li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .social-links li a:link,
+    .social-links li a:visited {
+        font-size: 25px;
     }
     .section{
         min-height: 1150px;;        
@@ -478,12 +500,7 @@ footer h1{
 
     }
     .img-div img{
-        width: 100%;
-        height: 90%;
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-        
+        object-fit: cover;  
     }
     .img-div h3{
         padding: 0;
@@ -507,7 +524,15 @@ footer h1{
         transition: background-color .7s;
         font-size: 14px;
     }
-
+    footer h1{
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    footer p{
+        font-size: 12px;
+    }
 }
 
 @media only screen and (min-width: 500px) {
@@ -517,9 +542,14 @@ footer h1{
     .intro p{
         font-size: 20px;
     }
-    .social-links{
-        font-size: 20px;
-        padding: 0;
+    .social-links li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .social-links li a:link,
+    .social-links li a:visited {
+        font-size: 35px;
     }
     .section{
         min-height: 1450px;;        
@@ -533,12 +563,16 @@ footer h1{
 
     }
     .img-div img{
-        width: 100%;
-        height: 90%;
-        padding: 0;
+        object-fit: cover;
+    }
+    footer h1{
         margin: 0;
-        overflow: hidden;
-        
+        padding: 0;
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    footer p{
+        font-size: 15px;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -573,7 +607,7 @@ footer h1{
         cursor: pointer;
     }
     .intro p{
-        font-size: 25px;
+        font-size: 22px;
         text-align: justify;
         text-align-last: center;
         padding: 0 20px 0 20px;
@@ -660,6 +694,15 @@ footer h1{
     footer p{
         font-size: 16px;
     }
+    .social-links li {
+        display: inline-block;
+        margin-right: 25px;
+    }
+
+    .social-links li a:link,
+    .social-links li a:visited {
+        font-size: 39px;
+    }
 
 }
 @media only screen and (min-width: 1000px) {
@@ -668,7 +711,7 @@ footer h1{
     }
     .intro p{
         color: white;
-        font-size: 24px;
+        font-size: 25px;
         
     }
      .social-links{
