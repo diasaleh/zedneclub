@@ -25,7 +25,7 @@ body {
 .head h1{
     margin: 0px 0px;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'Droid Arabic Kufi', serif;
     color: white;
     padding: 0;
@@ -49,7 +49,7 @@ body {
     background-color: #b51725;
     border: 3px solid white;
     color: white;
-    font-size: 7px;
+    font-size: 9px;
     cursor: pointer;
     margin-top: 40px;
     display: inline-block;
@@ -76,6 +76,7 @@ body {
     font-family: 'Scheherazade', sans-serif;
     padding: 0;
     margin: 0;
+    padding-bottom: 30px;
 }
 
 .section h2{
@@ -91,14 +92,6 @@ body {
     padding-bottom: 10px;
 }
 
-.section-header{
-    padding: 0;
-    margin: 0;
-    padding-top: 35px;
-}
-.section-header h2{
-    margin-bottom: -5px;
-}
 .section-content{
     width: 100%;
     text-align: center;
@@ -126,6 +119,29 @@ body {
     font-size: 15px;
     
 }
+.pagination {
+    display: inline-block;
+    margin-top: 40px;
+    font-family: 'Droid Arabic Kufi', serif;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #006d65;
+    color: white;
+}
+
+.pagination a:hover {
+    background-color: #b51725;
+    color: white;
+}
+
 footer{
     padding: 0 50 0 50;
     width: 100%;
@@ -136,10 +152,9 @@ footer{
     padding-top: 80px;
     font-family: 'Comfortaa', cursive;
     font-size: 10px;
-    margin-top: 60px;
 }
 footer:hover{
-        background-color: hsla(355, 77%, 40%, 0.9);
+    background-color: hsla(355, 77%, 40%, 0.9);
 
 }
 footer a{
@@ -191,6 +206,13 @@ footer h1{
         height: 280px;
         margin: 8px 8px;
 
+    }
+ 
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
     }
     .img-div img{
         width: 100%;
@@ -336,7 +358,7 @@ footer h1{
     }
     .back_btn{
         top: 18px;
-        left: 20px;
+        left: 60px;
         width: 100px;
         height: 30px;
         font-size: 14px;
