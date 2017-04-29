@@ -1,0 +1,37 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url('https://fonts.googleapis.com/css?family=Scheherazade');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Droid Arabic Kufi', serif;
+
+}
+
+
+
+
+
+@media only screen and (min-width: 300px) {
+
+}
+
+@media only screen and (min-width: 350px) {
+
+}
+
+@media only screen and (min-width: 500px) {
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 1000px) {
+
+
+}

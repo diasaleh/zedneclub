@@ -16,11 +16,16 @@ body {
     min-height: 100vh;
 
 }
+
 .head{
     height: 150px;
     width: 100%;
     background-image: url('../../images/pattern.png') ;
     text-align: center;
+    padding-top: 70px;
+}
+#headsection2{
+    background-image: url('../../images/redpattern.png') ;
 }
 .head h1{
     margin: 0px 0px;
@@ -30,43 +35,86 @@ body {
     color: white;
     padding: 0;
     position: relative;
-    top: 40px;
+    top: 57px;
     display: inline-block;
 }
-.arrow{
-    position: relative;
-    top: 2px;
-    right: 8px;
+
+.nav,ul{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    z-index: 99;
 }
-.back_btn{
-    text-align: center;
-    text-decoration: none;
-    position: absolute;
-    top: 50px;
-    width: 50px;
-    height: 20px;
-    margin-top: 10px;
-    background-color: #b51725;
-    border: 3px solid white;
-    color: white;
-    font-size: 9px;
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F7F7F7;
+    opacity: .94;
+}
+
+.nav li:not(:nth-child(2)) {
+    float: right;
+    border-left: 1px solid #006d65;
     cursor: pointer;
-    margin-top: 40px;
-    display: inline-block;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
+
 }
-.back_btn:hover{
-    background-color: white;
-    border: 3px solid #b51725;
+.nav li {
+    float: right;
+    cursor: pointer;
+
+}
+#navsection2 li{
+    border-left: #b51725;
+}
+.nav li:first-child {
+    border-left: none;
+}
+
+
+.nav li:first-child a{
+    padding: 0;
+}
+.nav li:first-child{
+    padding: 0;
+    padding-right: 138px;
+    padding-left: 26px;
+}
+#navsection2 li a{
     color: #b51725;
-    font-size: 7px;
-    transition: background-color .7s;
+
 }
-
-
+.nav li a {
+    display: block;
+    color: #006d65;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+.nav li a img{
+    height: 70px;
+}
+.nav li a:hover {
+    background-color: #2F2E2E;
+    color: white;
+}
+ #navsection2 li a:hover {
+    background-color: #2F2E2E;
+    color: white;
+}
+.icon{
+    font-size: 15px;
+    display: none;
+}
+ .active {
+    background-color: #006d65;
+    color: white !important;
+}
+#navsection2 .active {
+    background-color: #b51725;
+}
 .section{
     width: 100%;
     min-height: 860px;
@@ -168,38 +216,33 @@ footer h1{
     margin: 0;
     padding: 0;
     font-size: 17px;
-    white-space: pre-wrap;       /* css-3 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
-    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+    white-space: pre-wrap;       
+    word-wrap: break-word;      
+    white-space: -webkit-pre-wrap; 
     word-break: break-all;
     white-space: normal;
     margin-bottom: 30px;
 }
 
-
 @media only screen and (min-width: 300px) {
+    .nav li:not(:first-child):not(:last-child) {
+        display: none;
+    }   
+    .nav li:first-child{
+        padding-right: 3px;
+    }
+    .icon{
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 2px;
+        z-index: 99999;
+        border-left: 0 !important;
+        padding: 0;
+        margin: 0;
+    }
     .head h1{
         font-size: 15px;
-    }
-    .back_btn{
-        display: inline-block;
-        left: 0; 
-        right: 0; 
-        margin-left: auto; 
-        margin-right: auto; 
-        top: 50px;
-        width: 100px;
-        height: 25px;
-        color: white;
-        font-size: 12px;
-        
-    }
-     .back_btn:hover{
-        background-color: white;
-        border: 3px solid #b51725;
-        color: #b51725;
-        font-size: 12px;
-        transition: background-color .7s;
     }
    .img-div{
         width: 280px;
@@ -281,21 +324,7 @@ footer h1{
     }
     .head h1{
         font-size: 20px;
-    }
-    .back_btn{
-        top: 50px;
-        width: 100px;
-        height: 27px;
-        color: white;
-        font-size: 13px;
-        
-    }
-     .back_btn:hover{
-        background-color: white;
-        border: 3px solid #b51725;
-        color: #b51725;
-        font-size: 13px;
-        transition: background-color .7s;
+        top: 55px;
     }
     footer h1{
         margin: 0;
@@ -308,7 +337,10 @@ footer h1{
     }
 }
 
+
+
 @media only screen and (min-width: 500px) {
+
     .section{
         min-height: 1450px;;        
     }
@@ -323,18 +355,9 @@ footer h1{
     .head h1{
         font-size: 25px;
         position: relative;
-        top: 26px;
+        top: 47px;
     }
-    .back_btn{
-        top: 50px;
-        width: 100px;
-        height: 30px;
-        font-size: 14px;
-        
-    }
-     .back_btn:hover{
-        font-size: 14px;
-    }
+
     footer h1{
         margin: 0;
         padding: 0;
@@ -344,32 +367,31 @@ footer h1{
     footer p{
         font-size: 15px;
     }
+
 }
+
 @media only screen and (min-width: 768px) {
-   
- .section{
+   .nav li:first-child{
+        padding: 0;
+        padding-right: 26px;
+        padding-left: 26px;
+    }
+    .section{
         min-height: 900px;  
     }
-
+    .nav li:not(:last-child){
+        display: block !important;
+    }
+    .icon{
+        display: none !important;
+    }
    .head h1{
         font-size: 30px;
         position: relative;
         top: 45px;
     }
-    .back_btn{
-        top: 18px;
-        left: 60px;
-        width: 100px;
-        height: 30px;
-        font-size: 14px;
-        margin-left: 0;
-        
-    }
-     .back_btn:hover{
-        font-size: 14px;
-    }
     .img-div{
-        width: 320px;
+        width: 28%;
         height: 320px;
         background-color: #2F2E2E;
         margin: 6px 6px;
