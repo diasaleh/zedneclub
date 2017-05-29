@@ -14,9 +14,7 @@ body {
 }
 .main{
     min-height: 100vh;
-
 }
-
 .head{
     height: 150px;
     width: 100%;
@@ -107,8 +105,6 @@ body {
 .nav li:first-child:hover a{
     background-color: #F7F7F7;
 }
-
-
 .icon{
     font-size: 15px;
     display: none;
@@ -236,9 +232,6 @@ footer h1{
     .nav li:first-child{
         padding-right: 3px;
     }
-    .nav{
-        opacity: 1;
-    }
     .responsive li{
         float: none !important;
         display: block !important;
@@ -304,7 +297,6 @@ footer h1{
             background-color: hsla(355, 77%, 40%, 0.9);
 
     }
-    
     footer a{
         text-decoration: none;
         color: white;
@@ -393,9 +385,8 @@ footer h1{
 
 @media only screen and (min-width: 768px) {
     .nav{
-
-    background: rgba(255, 255, 255, 0.94) ;
-}
+        background: rgba(255, 255, 255, 0.94) ;
+    }
    .nav li:first-child{
         padding: 0;
         padding-right: 26px;
